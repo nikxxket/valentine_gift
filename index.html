@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для самой Любимой 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Основной фрейм -->
+    <div class="frame" id="mainFrame">
+        <div class="main-title">
+            💖 Для самой Любимой 💖
+        </div>
+
+        <div class="photo-container" id="photoContainer">
+            <div class="photo-placeholder" id="photoPlaceholder">
+                <span>📸 загрузи фото</span>
+            </div>
+            <img id="uploadedPhoto" class="uploaded-photo" style="display: none;" alt="Загруженное фото">
+        </div>
+
+        <div class="question-text">
+            Будешь моим Бубликом? 💕
+        </div>
+
+        <div class="buttons" id="buttonContainer">
+            <button class="btn btn-yes" id="yesBtn">
+                <span>Да</span>
+                <span>💕</span>
+            </button>
+            <button class="btn btn-no" id="noBtn">Нет</button>
+        </div>
+    </div>
+
+    <!-- Контент после нажатия "Нет" -->
+    <div class="content-after-no" id="afterNoContent">
+        <div class="image-container-first" id="firstImageContainer">
+            <img src="images/2.jpg" alt="Картинка" id="messageImage">
+        </div>
+        
+        <div class="text-content-first" id="firstTextContent">
+            <div class="message-text">Пиупец тебе, рыжик!!!🔫</div>
+            <div class="moving-emoji">🥺</div>
+        </div>
+
+        <!-- ВТОРАЯ ПОРЦИЯ КОНТЕНТА -->
+        <div class="content-second" id="secondContent">
+            <div class="transparent-container">
+                <div class="three-emojis">😂😂😂</div>
+                
+                <div class="text-group">
+                    <div class="black-text">ХАХАХАХА!!!</div>
+                    <div class="sub-text">Думала, я дам тебе такую возможность?!</div>
+                </div>
+                
+                <div class="two-emojis">🫵🫵</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контент после нажатия "Да" -->
+    <div class="content-after-yes" id="afterYesContent">
+        <div class="central-content">
+            <div class="title-row">
+                <div class="congrats-title">Ура!!! Ты мой бублик</div>
+                <div class="title-emoji">💕</div>
+            </div>
+            
+            <div class="images-row">
+                <div class="image-box">
+                    <img src="images/3.jpg" alt="Бублик 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23ffb6c1\' stroke=\'%23ff69b4\' stroke-width=\'4\'/%3E%3Ctext x=\'50\' y=\'65\' font-size=\'40\' text-anchor=\'middle\' fill=\'%23ff1493\'%3E💕%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="image-box">
+                    <img src="images/4.jpg" alt="Бублик 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23ffe4b5\' stroke=\'%23ffa500\' stroke-width=\'4\'/%3E%3Ctext x=\'50\' y=\'65\' font-size=\'40\' text-anchor=\'middle\' fill=\'%23ff8c00\'%3E🥯%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+        </div>
+
+        <div class="peek-emoji-bottom">🎉</div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
